@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" 
+    android:layout_marginBottom="25dp">
+
+        
+   <RelativeLayout 
+    android:id="@+id/titleContactList"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#5EBECF"
+    android:gravity="center_vertical" >
+
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="名片册"
+        android:textSize="20sp" />
+   
+   
+</RelativeLayout>
+   
+    
+    
+    <ListView
+        android:layout_below="@id/titleContactList"
+        android:id="@+id/country_lvcountry"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:divider="#c0c0c0"
+        android:dividerHeight="1px"
+        android:paddingLeft="15dip"
+        android:paddingRight="25dip"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/dialog"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/voip_toast_bg"
+        android:gravity="center"
+        android:textColor="#66000000"
+        android:textSize="30.0dip"
+        android:visibility="invisible" />
+
+    <com.gem.fs.ecard.contactlist.SideBar
+        android:layout_below="@id/titleContactList"
+        android:id="@+id/sidrbar"
+        android:layout_width="30.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|center" />
+
+</RelativeLayout>

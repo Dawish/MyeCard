@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">电子名片</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="spinner_promat">Select a choice</string>
+    <string name="send">Send</string>
+    <string name="not_connected">你还没有连接上其他人</string>
+    <string name="bt_not_enabled_leaving">蓝牙设备不可用. </string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+    <string name="scanning">查找周围的人中...</string>
+    <string name="select_device">选择一个人连接</string>
+    <string name="none_paired">你还没有认识的人</string>
+    <string name="none_found">未找任何人</string>
+    <string name="title_paired_devices">已认识的人</string>
+    <string name="title_other_devices">新认识的人</string>
+    <string name="button_scan">查找周围的人</string>
+    <string name="connect">连接</string>
+    <string name="discoverable">打开可见性</string>
+</resources>

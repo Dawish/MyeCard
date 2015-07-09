@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+   <RelativeLayout 
+    android:id="@+id/titleContactList"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#5EBECF"
+    android:gravity="center_vertical" >
+
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/title_name"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:onClick="more"
+        android:src="@drawable/btn_more" />
+   
+</RelativeLayout>
+   
+    
+    
+    
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/little_background"
+            android:gravity="center"
+            android:text="陈"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/big_background"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:text="陈德伟"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/company_name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:text="高博"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="15dp" >
+
+        <TextView
+           
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/little_background"
+            android:gravity="center"
+            android:text="电话"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/big_background"
+            android:gravity="right"
+            
+            android:paddingRight="5dp" >
+
+            <RelativeLayout
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:paddingLeft="5dp"
+                    android:id="@+id/phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@drawable/little_background"
+                    android:gravity="center_vertical"
+                    android:text="13813811234"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:onClick="send_message"
+                    android:id="@+id/send_message"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/btn_more" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/little_background"
+            android:gravity="center"
+            android:text="邮箱"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/big_background"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="dwchen1999@gmail.com"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/little_background"
+            android:gravity="center"
+            android:text="QQ"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qq_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/big_background"
+            android:gravity="center_vertical"
+            android:text="1020600242"
+            android:paddingLeft="5dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/little_background"
+            android:gravity="center"
+            android:text="公司"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/company_name2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/big_background"
+            android:gravity="center_vertical"
+            android:text="高博"
+            android:paddingLeft="5dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+   
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/little_background"
+            android:gravity="center"
+            android:text="住址"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/big_background"
+            android:gravity="center_vertical"
+            android:text="苏州市工业园区青剑湖***"
+            android:paddingLeft="5dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

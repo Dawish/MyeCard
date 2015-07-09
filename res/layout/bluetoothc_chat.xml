@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#5EBECF"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名片交换"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView 
+            android:id="@+id/connected_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#3D98FB"/>
+        
+    </LinearLayout>
+    
+     <LinearLayout
+        android:background="#5EBECF"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView 
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择名片："
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            />
+         <Spinner
+            android:layout_margin="3dp"
+            android:id="@+id/spinner_myCard"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:background="#B0BEC1"
+            android:layout_weight="6"
+            />
+      
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/in"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+ 
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_title_bg"
+        android:orientation="horizontal" >
+
+      <!--   <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_marginTop="3dp"
+                android:onClick="discoverable"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_discoverable_pressed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打开可见性" />
+        </LinearLayout>
+ -->
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#33000000" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_marginTop="3dp"
+                android:onClick="connect"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_connect_pressed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="连接设备" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#33000000" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_marginTop="3dp"
+                android:onClick="exchange"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_exchange_pressed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交换名片" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

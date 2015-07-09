@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="E-card" 
+            android:textSize="8pt"
+            />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_above="@+id/tv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="54dp"
+            android:src="@drawable/iv" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv2"
+            android:layout_centerHorizontal="true"
+            android:text="电子名片" 
+            android:textSize="8pt"/>
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="高博荣誉出品" 
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp"
+            android:text="交换号码变得如此简单"
+            android:textSize="8pt" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

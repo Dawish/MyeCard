@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+       <RelativeLayout 
+    android:id="@+id/titleContactList"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#5EBECF"
+    android:gravity="center_vertical" >
+
+  
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="发送短信"
+        android:textSize="20sp" />
+ 
+   
+</RelativeLayout>
+   
+    
+
+    <TextView android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+    	android:text="号码："
+    	android:textColor="#5599FF"
+        android:textSize="17dp"/>
+    
+    <EditText 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+    	android:id="@+id/mobile"/>
+	
+   <TextView 
+       android:layout_width="fill_parent" 
+       android:layout_height="wrap_content" 
+       android:text="内容"
+       android:textColor="#5599FF"
+       android:textSize="17dp"/>
+    
+    <EditText 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+    	android:minLines="3"
+    	android:id="@+id/content" />
+   
+    <Button 
+        android:layout_gravity="right"
+        android:id="@+id/butsend"
+        android:background="#5EBECF"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+    	android:text="发送"
+    	/>
+</LinearLayout>

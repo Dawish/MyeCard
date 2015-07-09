@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" > 
+     <RelativeLayout 
+    android:id="@+id/titleContactList"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#5EBECF"
+    android:gravity="center_vertical" >
+
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="修改用户资料"
+        android:textSize="20sp" />
+   
+   
+</RelativeLayout>
+   
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/edit_count_bg">
+        
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="50dp"
+         android:gravity="center_vertical"
+         android:orientation="horizontal" >
+
+     <TextView 
+            android:gravity="right"
+            android:layout_margin="5dp"
+            android:text="用户名"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"/>
+     <EditText 
+            android:id="@+id/userName"
+            android:layout_margin="5dp"
+            android:textColor="#77000000"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            />
+     </LinearLayout>
+     
+     <LinearLayout 
+        android:layout_marginTop="2dp" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:layout_margin="5dp"
+            android:text="原密码"
+             android:layout_width="70dp"
+             android:gravity="right"
+            android:layout_height="wrap_content"/>
+        <EditText 
+            android:id="@+id/oldpassword"
+            android:layout_margin="5dp"
+            android:textColor="#77000000"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            />
+
+
+    </LinearLayout>
+     
+      
+     <LinearLayout 
+        android:layout_marginTop="2dp" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:layout_margin="5dp"
+            android:text="新密码"
+             android:layout_width="70dp"
+             android:gravity="right"
+            android:layout_height="wrap_content"/>
+        <EditText 
+            android:id="@+id/newpassword"
+            android:layout_margin="5dp"
+            android:textColor="#77000000"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            />
+        <TextView 
+            android:layout_margin="5dp"
+            android:text="(不修改则空留)"
+            android:layout_width="100dp"
+            android:gravity="left"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    
+      
+     <LinearLayout 
+        android:layout_marginTop="2dp" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:layout_margin="5dp"
+            android:text="重复新密码"
+             android:layout_width="70dp"
+             android:gravity="right"
+            android:layout_height="wrap_content"/>
+        <EditText 
+            android:id="@+id/repeatnewpassword"
+            android:layout_margin="5dp"
+            android:textColor="#77000000"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            />
+        <TextView 
+            android:layout_margin="5dp"
+            android:text="(不修改则空留)"
+            android:layout_width="100dp"
+            android:gravity="left"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_marginTop="2dp" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:layout_margin="5dp"
+            android:text="邮箱"
+             android:layout_width="70dp"
+             android:gravity="right"
+            android:layout_height="wrap_content"/>
+        <EditText 
+            android:id="@+id/email"
+            android:layout_margin="5dp"
+            android:textColor="#77000000"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            />
+         <TextView 
+            android:layout_margin="5dp"
+            android:text="发送验证码"
+            android:layout_width="100dp"
+            android:gravity="left"
+            android:layout_height="wrap_content"/>
+        
+
+
+    </LinearLayout>
+    
+      <LinearLayout 
+        android:layout_marginTop="2dp" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <TextView 
+            android:layout_margin="5dp"
+            android:text="验证码"
+             android:layout_width="70dp"
+             android:gravity="right"
+            android:layout_height="wrap_content"/>
+        <EditText 
+            android:id="@+id/repeatnewpassword"
+            android:layout_margin="5dp"
+            android:textColor="#77000000"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            />
+        <TextView 
+            android:layout_margin="5dp"
+            android:text="(不修改则空留)"
+            android:layout_width="100dp"
+            android:gravity="left"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_margin="38dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="38dp"
+             android:background="@drawable/submit_button_bg"
+             android:text="确认修改" />
+        
+        </LinearLayout>
+    
+    
+    </LinearLayout>
+    
+   
+</LinearLayout>
